@@ -12,7 +12,33 @@ window.location.replace("https://tributosmei.com/");
   gtag('js', new Date());
 
   gtag('config', 'AW-17310861196');
+</script><!-- Event snippet for ss conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17351535425/VXIoCPTQs_EaEMHW7dFA',
+      'value': 1.0,
+      'currency': 'BRL'
+  });
 </script>
+<!-- Event snippet for ss conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17351535425/VXIoCPTQs_EaEMHW7dFA',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>PRISMA SOLAR</title>
